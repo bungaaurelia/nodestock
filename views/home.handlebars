@@ -1,2 +1,25 @@
-<h1>This is my Handlebars Homepage...</h1>
-<p>{{stuff}}</p>
+<div class="p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-4">Stock Details</h1>
+        <p class="lead">Here you can find the details of the stock.</p>
+        <hr class="my-4">
+        <h1>{{ stock.companyName }} ({{ stock.symbol }})</h1>
+        <br />
+        <strong>Latest Price: </strong>{{ stock.latestPrice }} USD<br />
+        <strong>Latest Update: </strong>{{ stock.latestUpdate }}<br />
+        <strong>Latest Source: </strong>{{ stock.latestSource }}<br />
+        <strong>Change Percent: </strong>{{ stock.changePercent }}%<br />
+        <strong>Change: </strong>{{ stock.change }} USD<br />
+        <strong>Market Cap: </strong>{{ stock.marketCap }} USD<br />
+        <strong>Open: </strong>{{ stock.open }} USD<br />
+        <strong>High: </strong>{{ stock.high }} USD<br />
+        <strong>Low: </strong>{{ stock.low }} USD<br />
+        <strong>Previous Close: </strong>{{ stock.previousClose }} USD<br />
+        <strong>Volume: </strong>{{ stock.volume }}<br />
+        <strong>Latest Volume: </strong>{{ stock.latestVolume }}<br />
+        <strong>Average Total Volume: </strong>{{ stock.avgTotalVolume }}<br />
+        <strong>P/E Ratio: </strong>{{ stock.peRatio }}<br />
+        <strong>52 Week High: </strong>{{ stock.week52High }} USD<br />
+        <strong>52 Week Low: </strong>{{ stock.week52Low }} USD<br />
+    </div>
+</div>
